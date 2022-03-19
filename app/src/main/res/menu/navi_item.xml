@@ -4,7 +4,7 @@
         android:id="@+id/standard"
         android:enabled="true"
         android:icon="@drawable/ic_home"
-        android:title="ホーム画面" />
+        android:title="ホーム" />
     <item
         android:id="@+id/location"
         android:enabled="true"
