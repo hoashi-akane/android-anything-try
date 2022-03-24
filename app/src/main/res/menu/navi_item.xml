@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/standard"
+        android:id="@+id/home_fragment"
         android:enabled="true"
         android:icon="@drawable/ic_home"
         android:title="ホーム" />
     <item
-        android:id="@+id/location"
+        android:id="@+id/gps_fragment"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_location_on"
         android:title="位置情報" />
     <item
-        android:id="@+id/camera"
+        android:id="@+id/camera_fragment"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_photo_camera"
         android:title="カメラ起動" />
