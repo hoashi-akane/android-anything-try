@@ -1,4 +1,4 @@
-package com.mad_der.data
+package com.mad_der.data.db
 
 import org.junit.Test
 

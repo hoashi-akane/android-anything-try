@@ -7,5 +7,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Navigation"
-include ':app'
-include ':data'
+include ':app',
+        ':data:repository',
+        ':data:db'
