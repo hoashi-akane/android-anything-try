@@ -4,8 +4,16 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -31,15 +39,34 @@ class HomeFragment : Fragment() {
         }
         return binding.root
     }
-}
 
-@Composable
-fun MakeMessage() {
-    Text(text = "composer test", textAlign = TextAlign.Center)
-}
+    @Composable
+    fun MakeMessage() {
+        Column(
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                text = "composer test",
+                color = Color.White,
+                textAlign = TextAlign.Center
+            )
+        }
+    }
 
-@Preview
-@Composable
-fun PreviewView() {
-    MakeMessage()
+    @Composable
+    fun MakeListView() {
+        LazyColumn(
+            modifier = Modifier
+                .verticalScroll(rememberScrollState())
+        ) {
+
+        }
+    }
+
+    @Preview
+    @Composable
+    fun PreviewView() {
+        MakeMessage()
+    }
 }
